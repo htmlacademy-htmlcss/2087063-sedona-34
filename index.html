@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 <header class="page-header">
@@ -28,8 +29,8 @@
       <li class="navigation-item">
         <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span></a>
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Хочу сюда!</a>
+      <li class="navigation-item ">
+        <a class="navigation-link-entrance" href="#">Хочу сюда!</a>
       </li>
     </ul>
   </nav>
@@ -46,61 +47,78 @@
     <h2 class="visually-hidden">Преимущества</h2>
     <ul class="advantages-list">
       <li class="advantages-item">
-        <h3 class="advantages-title">Настоящий городок</h3>
-        <p class="advantages-number">№1</p>
-        <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <div class="real-city">
+        <h3 class="advantages-title-city">Настоящий городок</h3>
+        <p class="advantages-number-city">№1</p>
+        <p class="advantages-description-city">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
         <img class="real-city" src="images/advantages/real-city.jpg" width="800" height="384" alt="Город Седона.">
       <ul class="advantages-city">  
         <li class="advantages-item-offer">
+          <div class="housing">
           <h4 class="advantages-title-offer">Жильё</h4>
           <p class="advantages-offer">Рекомендуем пожить в настоящем мотеле, 
           всё как в кино!</p>
+          </div>
         </li>
         <li class="advantages-item-offer">
+          <div class="food">
           <h4 class="advantages-title-offer">Еда</h4>
           <p class="advantages-offer">Всегда заказывайте
           топовый фирменный бургер, вы не разочаруетесь!</p>
+          </div>
         </li>
-        <li class="advantages-item-offer">   
+        <li class="advantages-item-offer">
+          <div class="souvenirs">   
           <h4 class="advantages-title-offer">Сувениры</h4>
           <p class="advantages-offer">Не только китайского, 
           но и настоящего местного производства!</p>
+          </div>
         </li>
       </ul>
       </li>
       <li class="advantages-item">
         <img  class="bridge" src="images/advantages/devils-bridge.jpg" width="800" height="384" alt="Мост Дьявола.">
-        <h3 class="advantages-title">Там есть
+        <div class="bridge">
+        <h3 class="advantages-title-bridge">Там есть
           мост дьявола</h3>
-        <p class="advantages-number">№2</p>
-        <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        <p class="advantages-number-bridge">№2</p>
+        <p class="advantages-description-bridge">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </div>
       </li>
       <li class="advantages-item">
+        <div class="area">
         <h3 class="advantages-title">Небольшая
           площадь</h3>
         <p class="advantages-number">№3</p>
         <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+        </div>
       </li>
       <li class="advantages-item">
+        <div class="road">
         <h3 class="advantages-title">Красивая
           дорога</h3>
         <p class="advantages-number">№4</p>
         <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
       </li>
       <li class="advantages-item">
+        <div class="tourists">
         <h3 class="advantages-title">Мало
           туристов</h3>
         <p class="advantages-number">№5</p>
         <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
       </li>
     </ul>
   </section>
   <section class="hotels-search">
     <h2 class="hotels-list">Заинтересовались?</h2>
-    <p class="hottels-item">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <p class="hotels-item">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     <a class="button button-hotels-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
   </section>
   <section class="newsletter">
+    <div class="newsletter-background">
     <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
     <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="newletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -108,6 +126,7 @@
       <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email"  required>
       <button class="button newsletter-button" type="submit">Подписаться</button>
     </form>
+    </div>
   </section>
 </main>
 <footer class="page-footer">
@@ -115,17 +134,17 @@
     <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="https://vk.com/htmlacademy">
+        <a class="button button-social" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">ВКонтакте</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://t.me/htmlacademy ">
+        <a class="button button-social" href="https://t.me/htmlacademy ">
           <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+        <a class="button button-social" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">Ютуб</span>
         </a>
       </li>
@@ -137,7 +156,7 @@
   </section>
   <section class="site-developer">
     <h2 class="visually-hidden">Разработчик сайта</h2>
-    <a class="button" href="https://htmlacademy.ru/">
+    <a class="button button-developer" href="https://htmlacademy.ru/">
       <span class="visually-hidden">Html academy</span>
     </a>
   </section>

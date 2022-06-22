@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 <header class="page-header">
@@ -28,18 +29,19 @@
       <li class="navigation-item">
         <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span></a>
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Хочу сюда!</a>
+      <li class="navigation-item ">
+        <a class="navigation-link-entrance" href="#">Хочу сюда!</a>
       </li>
     </ul>
   </nav>
 </header>
 <main class="main-inner">
+  <div class="selection">
     <header class="inner=header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
+                <a class="breadcrumbs-link-index" href="index.html">
                     <span class="visually-hidden">Главная</span>
                 </a>
             </li>
@@ -95,6 +97,7 @@
             <button class="button-submit" type="submit">Применить</button>
             <button class="button-reset" type="reset">Сбросить</button>
         </form>
+  </div>      
         <p class="hotels-found">Найдено гостиниц:38</p>
         <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала дешевые</option>
@@ -104,10 +107,10 @@
           <a href="#" class="button-button-dark">
             <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a class="button" href="#">
+          <a class="button-view" href="#">
             <span class="visually-hidden">Слайдшоу</span>
           </a>
-          <a class="button" href="#">
+          <a class="button-view" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
         <ul class="hotel-list">
@@ -120,7 +123,7 @@
             <span class="hotel-card-price">От 4000 ₽</span>
             <a class="hotel-card-detail button" href="#">подробнее</a>
             <a class="hotel-card-favorites button" href="#">в избранное</a>
-            <b class="hotel-card-price">Рейтинг: 8,5</b>
+            <b class="hotel-card-rating">Рейтинг: 8,5</b>
             </li>
             <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -131,7 +134,7 @@
             <span class="hotel-card-price">От 5000 ₽</span>
             <a class="hotel-card-detail button" href="#">подробнее</a>
             <a class="hotel-card-favorites-on button" href="#">в избранном</a>
-            <b class="hotel-card-price">Рейтинг: 9,2</b>
+            <b class="hotel-card-rating">Рейтинг: 9,2</b>
             </li>
             <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -142,7 +145,7 @@
             <span class="hotel-card-price">От 2500 ₽</span>
             <a class="hotel-card-detail button" href="#">подробнее</a>
             <a class="hotel-card-favorites button" href="#">в избранное</a>
-            <b class="hotel-card-price">Рейтинг: 6,9</b>
+            <b class="hotel-card-rating">Рейтинг: 6,9</b>
             </li>
             <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -153,7 +156,7 @@
             <span class="hotel-card-price">От 1500 ₽</span>
             <a class="hotel-card-detail button" href="#">подробнее</a>
             <a class="hotel-card-favorites button" href="#">в избранное</a>
-            <b class="hotel-card-price">Рейтинг: 5,0</b>
+            <b class="hotel-card-rating">Рейтинг: 5,0</b>
             </li>                         
         </ul>
         <ul class="pagination">
@@ -200,17 +203,17 @@
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
+          <a class="button button-social" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy ">
+          <a class="button button-social" href="https://t.me/htmlacademy ">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="button button-social" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
@@ -222,7 +225,7 @@
     </section>
     <section class="site-developer">
       <h2 class="visually-hidden">Разработчик сайта</h2>
-      <a class="button" href="https://htmlacademy.ru/">
+      <a class="button button-developer" href="https://htmlacademy.ru/">
         <span class="visually-hidden">Html academy</span>
       </a>
     </section>
