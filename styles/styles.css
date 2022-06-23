@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -42,7 +42,7 @@ body {
 .main-index{
     color: #000000;
     background-color: #FFFFFF;
-    background-image: url(/images/backgrounds/background-index.jpg);
+    background-image: url(../images/backgrounds/background-index.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;  
 }
@@ -177,8 +177,8 @@ body {
 }
 .newsletter-background{
     color: #FFFFFF;
-    background-color: #000000;;
-    background-image: url(/images/backgrounds/background-newsletter.jpg);
+    background-color: #000000;
+    background-image: url(../images/backgrounds/background-newsletter.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;  
 }
@@ -229,32 +229,38 @@ body {
     font-weight: 700;
 }
 .selection{
-    color: #FFFFFF;
-    background-color: #000000;
-    background-image: url(/images/backgrounds/background-filter.jpg);
+    color: #000000;
+    background-color: #FFFFFF;
+    background-image: url(../images/backgrounds/background-filter.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat; 
 }
 .inner-header-title{
+    color: #FFFFFF;
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
 }
-.breadcrumbs a{
+.breadcrumbs {
+    color:#FFFFFF;
     font-size: 16px;
     line-height: 21px;
 }
 .breadcrumbs .breadcrumbs-link-index{
-    color:inherit;
+    color:#FFFFFF;
     text-decoration: none;
-
+}
+.hotels-list-filters{
+    color:#FFFFFF;
 }
 .catalog-filter-title{
+    color: #FFFFFF;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
 }
 .control{
+    color: #FFFFFF;
     font-size: 18px;
     line-height: 21px;
 }
@@ -268,6 +274,7 @@ body {
     color: #FFFFFF;
     background-color:#82B3D3;
     border-radius: 4px;
+    border:none;
 }
 .button-reset{
     font-weight: 400;
