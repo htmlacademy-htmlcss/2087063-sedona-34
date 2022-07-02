@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="container">
 <header class="page-header">
-  <a class="navigation-logo" href="index.html">
-    <img class="page-header-logo" src="images/header/logo-main.svg" width="139" height="70" alt="Логотип Седоны." >
-  </a>
   <nav class="navigation">
+    <a class="navigation-logo" href="index.html">
+      <img class="page-header-logo" src="images/header/logo-main.svg" width="139" height="70" alt="Логотип Седоны." >
+    </a>
     <ul class="navigation-list">
       <li class="navigation-item">
         <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
@@ -36,8 +37,7 @@
   </nav>
 
 </header>
-<main class="main-index">
-  <img class="main-page-logo" alt="Добро пожаловать." src="#">
+<main class=" main-container main-index">
   <h1 class="visually-hidden">Седона</h1>
   <img class="welcome" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону.">
    <p class="sedona-description">Седона — небольшой городок в Аризоне,
@@ -47,12 +47,14 @@
     <h2 class="visually-hidden">Преимущества</h2>
     <ul class="advantages-list">
       <li class="advantages-item">
-        <div class="real-city">
+        <div class="advantages-description-block">
         <h3 class="advantages-title-city">Настоящий городок</h3>
         <p class="advantages-number-city">№1</p>
         <p class="advantages-description-city">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <img class="real-city" src="images/advantages/real-city.jpg" width="800" height="384" alt="Город Седона.">
+        <div class="advantages-description-image">
+        <img class="real-city-image" src="images/advantages/real-city.jpg" width="800" height="384" alt="Город Седона.">
+        </div>  
       <ul class="advantages-city">  
         <li class="advantages-item-offer">
           <div class="housing">
@@ -78,15 +80,17 @@
       </ul>
       </li>
       <li class="advantages-item">
+        <div class="advantages-description-image">
         <img  class="bridge" src="images/advantages/devils-bridge.jpg" width="800" height="384" alt="Мост Дьявола.">
-        <div class="bridge">
+        </div>
+        <div class="advantages-description-block">
         <h3 class="advantages-title-bridge">Там есть
           мост дьявола</h3>
         <p class="advantages-number-bridge">№2</p>
         <p class="advantages-description-bridge">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </div>
       </li>
-      <li class="advantages-item">
+      <li class="advantages-item-no-images">
         <div class="area">
         <h3 class="advantages-title">Небольшая
           площадь</h3>
@@ -94,7 +98,7 @@
         <p class="advantages-description">Все достопримечательности находятся очень близко</p>
         </div>
       </li>
-      <li class="advantages-item">
+      <li class="advantages-item-no-images">
         <div class="road">
         <h3 class="advantages-title">Красивая
           дорога</h3>
@@ -102,7 +106,7 @@
         <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
       </li>
-      <li class="advantages-item">
+      <li class="advantages-item-no-images">
         <div class="tourists">
         <h3 class="advantages-title">Мало
           туристов</h3>
@@ -161,6 +165,7 @@
     </a>
   </section>
 </footer>
+    </div>
   </body>
 </html>
 
