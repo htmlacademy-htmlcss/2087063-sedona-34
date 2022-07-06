@@ -254,6 +254,9 @@ body {
     color: #333333;
 }
 .button-hotels-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width:574px;
     height:60px;
     font-weight: 700;
@@ -440,7 +443,10 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color:#000000
+    color: #000;
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .hotel-card-sign{
     font-size: 18px;
@@ -455,6 +461,9 @@ body {
     font-weight: 400;
 }
 .hotel-card-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -467,6 +476,9 @@ body {
     border-radius: 4px;
 }
 .hotel-card-favorites{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -479,6 +491,9 @@ body {
     border-radius: 4px;
 }
 .hotel-card-rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -489,6 +504,9 @@ body {
     border-radius: 4px;
 }
 .hotel-card-favorites-on{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -638,14 +656,20 @@ html{
     height:33px;
 }
 .hotel-list{
+    display:grid;
+    grid-template-columns: repeat(3, 340px);
+    grid-row-gap:20px;
+    grid-column-gap:18px; 
     list-style-type: none;
     margin:0;
-    margin-bottom:96px;
     padding:0;
+    margin-bottom: 96px;
+    margin-left: 73px;
 }
 .pagination-container{
     display: flex;
     height: 60px;
+    margin-left: 73px;
 }
 .pagination{
     display: flex;
@@ -659,4 +683,19 @@ html{
 .select-hotels{
     width: 160px;
     height:49px;
+}
+.hotel-card{
+    display:grid;
+    margin:20px 20px 20px 20px;
+}
+.hotel-card-content{
+    display:grid;
+    grid-template-columns: 140px 140px ;
+    grid-template-rows:    22px 37px 37px;
+    row-gap: 16px;
+    column-gap: 20px;
+}
+.hotel-card-link{
+    margin:0;
+    padding:0;
 }
