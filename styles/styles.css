@@ -1325,4 +1325,283 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     outline:none;
 }
 
-
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);;
+    z-index: 10;
+}
+.modal {
+    font-size: 20px;
+    position: relative;
+    margin: auto;
+    padding: 62px 70px 70px 70px;
+    background: #ffffff;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+}
+.modal-search {
+    width: 575px;
+}
+.close-button {
+    position: absolute;
+    padding: 0;
+    top: 54px;
+    right: 70px;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    border: none;
+    fill: #000000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-button:hover {
+    background-color: #E6E6E6;
+}
+  
+.close-button:active path {
+    fill: rgba(0, 0, 0, 0.3);
+    background-color: #E6E6E6;
+}
+  
+.close-button:focus {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+.modal-title {
+    margin: 0;
+    margin-bottom: 59px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+.modal-search-form {
+    display: grid;
+    grid-template-columns: 155px 133px 153px 134px;
+    row-gap: 11px;
+    font-weight: 700;
+    position: relative;
+}
+.modal-search-form label {
+    grid-column: 1 / 2;
+    margin-top: 15px;
+}
+.date-input-container {
+    grid-column: 2 / -1;
+}
+.modal-search-form input {
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight:400;
+    align-self: center;
+    padding-left: 19px;
+    background-image: url("../images/modal/calendar.svg");
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    width: 400px;
+}
+.modal-search-form input:hover {
+    background-color: #E6E6E6;
+}
+.modal-search-form input:focus{
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+.modal-search-form input:focus:active {
+    background-color: #FFFFFF;
+    outline: 2px solid #000000;
+}
+.modal-message {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    margin: 0;
+    grid-column: 2 / -1;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.modal-message-incorrect {
+    color: #FF5757;
+}
+.modal-adults {
+    grid-column: 1 / 2;
+    align-self: center;
+}
+.modal-adults-input {
+    grid-column: 2 / 3;
+    text-align: center;
+    position: relative;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+}
+.modal-children {
+    margin-left: 56px;
+}
+.modal-children-input {
+    grid-column: 4 / 5;
+    text-align: center;
+    position: relative;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+}
+.minus {
+    position: absolute;
+    top: 12px;
+    left: 19px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    background: url("../images/modal/minus.svg") no-repeat center;
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+}
+.plus {
+    position: absolute;
+    top: 12px;
+    right: 19px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    background: url("../images/modal/plus.svg") no-repeat center;
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+}
+.minus:hover,
+.plus:hover {
+  opacity: 1;
+}
+.minus:focus,
+.plus:focus {
+  opacity: 1;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  outline: none;
+}
+.minus:active,
+.plus:active {
+  opacity: 0.2;
+}
+.modal-button-submit {
+    grid-column: 1 / -1;
+    border: none;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    height: 60px;
+    margin-top: 29px;
+    border-radius: 10px;
+    display: inline-block;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #83B3D3;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.modal-button-submit:hover {
+    background-color: #68A2CA;
+}
+.modal-button-submit:focus {
+    background-color: #68A2CA;
+    outline: 3px solid #756257;
+}
+.modal-button-submit:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #68A2CA;
+}
+.modal-tooltip {
+    display: flex;
+    align-items: center;
+}
+.tooltip {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 18px;
+    min-width: 25px;
+}
+.tooltip-toggle {
+    display: block;
+    min-width: 25px;
+    min-height: 25px;
+    border-radius: 50%;
+    font-family: inherit;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    background-image: url("../images/modal/info.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+.tooltip-toggle:hover {
+    background-color: #68A2CA;
+}
+.tooltip-text {
+    background-color: #333333;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 15px 18px 18px 22px;
+    width: 216px;
+    position: absolute;
+    margin-top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 1;
+}
+.tooltip-text::before {
+    content: "";
+    background-image: url("../images/modal/triangle.svg");
+    width: 19px;
+    height: 9px;
+    position: absolute;
+    top: -9px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+.modal-close {
+    display: none;
+}

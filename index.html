@@ -182,6 +182,73 @@
     </a>
   </section>
 </footer>
+<div class="modal-container modal-close">
+  <div class="modal modal-search">
+    <button class="close-button" type="button">
+      <span class="visually-hidden">Закрыть.</span>
+      <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" fill="#000"/>
+      </svg>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
+
+        <label class="modal-check-in-date" for="check-in">Дата заезда:</label>
+        <div class="date-input-container">
+          <input class="modal-check-in-input" type="text" id="check-in" name="date" value="27 апреля 2020" placeholder="Укажите дату" required>
+          <p class="modal-message modal-message-incorrect">Мы не можем отправить вас в прошлое.</p>
+        </div>
+
+        <label class="modal-leave-date" for="leave-date">Дата выезда:</label>
+        <div class="date-input-container">
+          <input class="modal-leave-date-input" type="text" id="leave-date" name="date" value="1 сентября 2021" required>
+          <p class="modal-message modal-message-correct">На эти даты есть свободные номера. Пока есть.</p>
+        </div>
+
+        <span class="modal-adults">Взрослые:</span>
+        <div class="modal-adults-input">
+          <button class="minus" type="button">
+            <span class="visually-hidden">Уменьшить количество взрослых.</span>
+          </button>
+
+          <span class="modal-adults-count">2</span>
+
+          <button class="plus" type="button">
+            <span class="visually-hidden">Увеличить количество взрослых.</span>
+          </button>
+        </div>
+
+        <div class="modal-tooltip">
+          <span class="modal-children">Дети:</span>
+          <div class="tooltip">
+            <span class="visually-hidden">Всплывающая подсказка.</span>
+            <span class="tooltip-toggle"></span>
+            <p class="tooltip-text">
+            Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-children-input">
+          <button class="minus" type="button">
+            <span class="visually-hidden">Уменьшить количество детей.</span>
+          </button>
+
+          <span class="modal-children-count">1</span>
+
+          <button class="plus" type="button">
+            <span class="visually-hidden">Увеличить количество детей.</span>
+          </button>
+        </div>
+
+        <button class="modal-button-submit" type="submit">Найти</button>
+
+      </form>
+    </section>
+  </div>
+
+</div>
     </div>
   </body>
 </html>
