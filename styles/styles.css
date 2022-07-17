@@ -188,11 +188,16 @@ body {
 }
 
 .main-index {
+  background: linear-gradient(to bottom, grey 485px, #ffffff 485px, #ffffff 100%);
   background-image: url("../images/backgrounds/background-index.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #000000;
-  background-color: rgba(131, 179, 211, 0.12);;
+}
+
+.main-container {
+  padding-top: 51px;
+  background-color: #ffffff;
 }
 
 .sedona-description {
@@ -246,7 +251,6 @@ body {
 }
 
 .advantages-title-city {
-  padding-top: 92px;
   margin: 0;
   padding-left: 25px;
   padding-right: 25px;
@@ -281,8 +285,9 @@ body {
 }
 
 .advantages-description-block {
+  padding-top: 92px;
+  padding-bottom: 92px;
   width: 400px;
-  min-height: 384px;
   background-color: #82b3d3;
 }
 
@@ -293,7 +298,6 @@ body {
 
 .advantages-title-offer {
   margin: 0;
-  padding-top: 183px;
   padding-left: 25px;
   padding-right: 25px;
   font-weight: 700;
@@ -315,7 +319,8 @@ body {
 }
 
 .housing {
-  min-height: 384px;
+  padding-top: 182px;
+  padding-bottom: 81px;
   background-image: url("../images/advantages/house.svg");
   background-size: 75px 72px;
   background-repeat: no-repeat;
@@ -324,7 +329,8 @@ body {
 }
 
 .food {
-  min-height: 384px;
+  padding-top: 182px;
+  padding-bottom: 81px;
   background-image: url("../images/advantages/food.svg");
   background-size: 74px 70px;
   background-repeat: no-repeat;
@@ -333,7 +339,8 @@ body {
 }
 
 .souvenirs {
-  min-height: 384px;
+  padding-top: 182px;
+  padding-bottom: 81px;
   background-image: url("../images/advantages/souvenirs.svg");
   background-size: 100px 76px;
   background-repeat: no-repeat;
@@ -343,7 +350,6 @@ body {
 
 .advantages-title-bridge {
   margin: 0;
-  padding-top: 92px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -376,7 +382,6 @@ body {
 
 .advantages-title {
   margin: 0;
-  padding-top: 103px;
   font-weight: 700;
   padding-left: 25px;
   padding-right: 25px;
@@ -408,20 +413,23 @@ body {
 }
 
 .area {
+  padding-top: 102px;
+  padding-bottom: 102px;
   min-width: 400px;
-  min-height: 384px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .road {
+  padding-top: 102px;
+  padding-bottom: 102px;
   min-width: 400px;
-  min-height: 384px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .tourists {
+  padding-top: 102px;
+  padding-bottom: 102px;
   min-width: 400px;
-  min-height: 384px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -1120,11 +1128,6 @@ body {
 
 html {
   height:100%;
-}
-
-.main-container {
-  padding-top: 51px;
-  background-color: #ffffff;
 }
 
 .main-inner {
